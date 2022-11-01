@@ -4,3 +4,7 @@
     -fx-background-size: 1383 799;
     -fx-background-position: center center;
 }
+.panel{
+    -fx-background-color: rgba(238, 223, 223, 0.20);
+    -fx-border-color: EEDFDF;
+}
