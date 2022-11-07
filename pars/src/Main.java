@@ -1,54 +1,32 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
 import java.io.IOException;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        try {
-            Document document = Jsoup.connect("https://yandex.ru/pogoda").get();
-            Element now = document.select("div.fact").first();
-            String tim = now.select("time.time").text();
-            String tem = now.select("div.fact__temp_size_s").text();
-            String wind = now.select("div.fact__wind-speed > div.term__value").text();
-            String vl = now.select("div.fact__humidity > div.term__value").text();
-            String pres = now.select("div.fact__pressure > div.term__value").text();
-            System.out.println(tim);
-            System.out.println(tem);
-            System.out.println(wind);
-            System.out.println(vl);
-            System.out.println(pres);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите город: ");
+        String city = scanner.nextLine();
+        Weather weather = new Weather(city);
 
-            Elements day = document.select("div.swiper-container");
-
-            for (Element name : day) {
-                String daes = name.select("div.fact__hour-label").text(); //день неделт
-                String temp = name.select("div.fact__hour-temp").text(); //день недели
-                System.out.println(daes);
-                System.out.println(temp);
-            }
-////////////////////////////////////////////////////////////////////
-            Elements date = document.select("a.forecast-briefly__day-link"); //time.forecast-briefly__date
-            Elements tenpen = document.select("div.forecast-briefly__days");
-
-            for (Element name : date) {
-                String dates = name.select("time.forecast-briefly__date").text(); //день неделт
-                String days = name.select("div.forecast-briefly__name").text(); //день неделт
-                System.out.println(dates + " " +  days);
-            }
-            for (Element name : tenpen) {
-                String tmp = name.select("div.forecast-briefly__temp_day").text(); //темпа днем
-                System.out.println(tmp);
-            }
-            for (Element name : tenpen) {
-                String tmph = name.select("div.forecast-briefly__temp_night").text(); //темпа ночью
-                System.out.println(tmph);
-            }
+        List<WeatherConstructor> weatherTime = weather.getDay();
+        for (int i = 0; i < 8; i++) {
+            WeatherConstructor summary = weatherTime.get(i);
+            System.out.println(summary.getTime());
+            System.out.println(summary.getTemp());
+            System.out.println();
 
         }
-        catch (Exception e){}
 
+        List<WeatherConstructor> weatherWeek = weather.getWeek();
+        for (int i = 0; i < 8; i++) {
+            WeatherConstructor summary = weatherWeek.get(i);
+            System.out.println(summary.getDate());
+            System.out.println(summary.getDay());
+            System.out.println(summary.getTemp());
+            System.out.println(summary.getTempH());
+            System.out.println(summary.getCl());
+            System.out.println();
+        }
     }
 }
