@@ -10,14 +10,99 @@ public class Weather {
     private Document document;
 
     public Weather(String city){
-        this.url = "https://yandex.ru/pogoda/" + city;
-        try{
-            this.document = Jsoup.connect(url).get();
+        try {
+            switch (city){
+                case "Сочи":
+                    City cit = City.Сочи;
+                    city = cit.getTranscript();
+                    break;
+                case "Москва":
+                    City cit1 = City.Москва;
+                    city = cit1.getTranscript();
+                    break;
+                case "Адлер":
+                    City cit2 = City.Адлер;
+                    city = cit2.getTranscript();
+                    break;
+                case "Калининград":
+                    City cit3 = City.Калининград;
+                    city = cit3.getTranscript();
+                    break;
+                case "Анапа":
+                    City cit4 = City.Анапа;
+                    city = cit4.getTranscript();
+                    break;
+                case "Кисловодск":
+                    City cit5 = City.Кисловодск;
+                    city = cit5.getTranscript();
+                    break;
+                case "Краснодар":
+                    City cit6 = City.Краснодар;
+                    city = cit6.getTranscript();
+                    break;
+                case "Казань":
+                    City cit7 = City.Казань;
+                    city = cit7.getTranscript();
+                    break;
+                case "Лазаревское":
+                    City cit8 = City.Лазаревское;
+                    city = cit8.getTranscript();
+                    break;
+                case "Екатеринбург":
+                    City cit9 = City.Екатеринбург;
+                    city = cit9.getTranscript();
+                    break;
+                case "Геленджик":
+                    City cit11 = City.Геленджик;
+                    city = cit11.getTranscript();
+                    break;
+                case "Новосибирск":
+                    City cit12 = City.Новосибирск;
+                    city = cit12.getTranscript();
+                    break;
+                case "Махачкала":
+                    City cit13 = City.Махачкала;
+                    city = cit13.getTranscript();
+                    break;
+                case "Волгоград":
+                    City cit14 = City.Волгоград;
+                    city = cit14.getTranscript();
+                    break;
+                case "Крым":
+                    City cit15 = City.Крым;
+                    city = cit15.getTranscript();
+                    break;
+                case "Владивосток":
+                    City cit16 = City.Владивосток;
+                    city = cit16.getTranscript();
+                    break;
+                case "Ялта":
+                    City cit17 = City.Ялта;
+                    city = cit17.getTranscript();
+                    break;
+                case "Донецк":
+                    City cit18 = City.Донецк;
+                    city = cit18.getTranscript();
+                    break;
 
+                default:
+                    System.out.println("Город не найден");
+            }
+            this.url = "https://yandex.ru/pogoda/" + city;
+            this.document = Jsoup.connect(url).get();
         }
-        catch (Exception e){
+        catch (Exception e) {
             e.printStackTrace();
         }
+
+//        this.url = "https://yandex.ru/pogoda/" + city;
+//        try{
+//            this.document = Jsoup.connect(url).get();
+//
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
         System.out.println(getTime());
         System.out.println(getTemp());
         System.out.println(getWind());
