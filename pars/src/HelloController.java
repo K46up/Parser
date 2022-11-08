@@ -17,6 +17,9 @@ public class HelloController {
     private TextField id_Search;
 
     @FXML
+    private Button id_buttonFind;
+
+    @FXML
     private Label id_city;
 
     @FXML
