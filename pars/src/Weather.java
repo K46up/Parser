@@ -187,6 +187,7 @@ public class Weather {
                 weatherDay.add(new WeatherConstructor(time.get(i).text(), temp.get(i).ownText()));
             }
 
+
             return weatherDay;
         }
         catch (Exception e){
