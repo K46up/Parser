@@ -95,19 +95,12 @@ public class Weather {
             e.printStackTrace();
         }
 
-//        this.url = "https://yandex.ru/pogoda/" + city;
-//        try{
-//            this.document = Jsoup.connect(url).get();
-//
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-        System.out.println(getTime());
-        System.out.println(getTemp());
-        System.out.println(getWind());
-        System.out.println(getVl());
-        System.out.println(getPress());
+
+        //System.out.println(getTime());
+        //System.out.println(getTemp());
+        //System.out.println(getWind());
+        //System.out.println(getVl());
+        //System.out.println(getPress());
 
     }
     public String getTemp(){

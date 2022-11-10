@@ -11,16 +11,12 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resources/pogoda.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1383, 799);
-        stage.setTitle("Hello!");
+        stage.setTitle("Погодник");
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) {
         launch();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите город: ");
-        String city = scanner.nextLine();
-        Weather weather = new Weather(city);
     }
 }

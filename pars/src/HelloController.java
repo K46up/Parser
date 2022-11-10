@@ -1,3 +1,4 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -23,6 +24,9 @@ public class HelloController {
 
     @FXML
     private Label id_city;
+
+    @FXML
+    private Label id_currentDegree;
 
     @FXML
     private Label id_date1;
@@ -206,7 +210,23 @@ public class HelloController {
 
     @FXML
     void initialize() {
+        id_buttonFind.setOnAction(actionEvent -> { //getTime()
+            String city = id_Search.getText().trim();
+            Weather weather = new Weather(city);
+            id_time.setText(weather.getTime());
+            id_wind.setText(weather.getWind());
+            id_humidity.setText(weather.getVl());
+            id_pressure.setText(weather.getPress());
+            id_currentDegree.setText(weather.getTemp());
 
+            //по часовая getDay
+            //id_zero.setText(weather.getDay());
+
+            //по дням недели
+
+
+
+        });
 
     }
 
