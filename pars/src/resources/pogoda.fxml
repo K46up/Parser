@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1383.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="1383.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
    <children>
       <Pane layoutX="35.0" layoutY="125.0" prefHeight="355.0" prefWidth="1314.0" styleClass="panel" stylesheets="@style.css">
          <children>
@@ -60,47 +60,47 @@
                </font>
             </Label>
             <Separator layoutX="19.0" layoutY="213.0" prefHeight="5.0" prefWidth="1277.0" />
-            <Label layoutX="163.0" layoutY="240.0" text="00:00" textFill="WHITE">
+            <Label fx:id="id_time1" layoutX="163.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="289.0" layoutY="240.0" text="03:00" textFill="WHITE">
+            <Label fx:id="id_time2" layoutX="289.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="423.0" layoutY="240.0" text="06:00" textFill="WHITE">
+            <Label fx:id="id_time3" layoutX="423.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="565.0" layoutY="240.0" text="09:00" textFill="WHITE">
+            <Label fx:id="id_time4" layoutX="565.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="696.0" layoutY="240.0" text="12:00" textFill="WHITE">
+            <Label fx:id="id_time5" layoutX="696.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="832.0" layoutY="240.0" text="15:00" textFill="WHITE">
+            <Label fx:id="id_time6" layoutX="832.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="969.0" layoutY="240.0" text="18:00" textFill="WHITE">
+            <Label fx:id="id_time7" layoutX="969.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="1102.0" layoutY="240.0" text="21:00" textFill="WHITE">
+            <Label fx:id="id_time8" layoutX="1102.0" layoutY="240.0" prefHeight="27.0" prefWidth="60.0" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="184.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="184.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -111,7 +111,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_zeroImage" fitHeight="30.0" fitWidth="51.0" layoutX="158.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="315.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="315.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -122,7 +122,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_threeImage" fitHeight="30.0" fitWidth="51.0" layoutX="289.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="449.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="449.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -133,7 +133,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_sixImage" fitHeight="30.0" fitWidth="51.0" layoutX="423.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="591.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="591.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -144,7 +144,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_nineImage" fitHeight="30.0" fitWidth="51.0" layoutX="565.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="722.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="722.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -155,7 +155,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_twelveImage" fitHeight="30.0" fitWidth="51.0" layoutX="696.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="858.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="858.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -166,7 +166,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_fifteenImage" fitHeight="30.0" fitWidth="51.0" layoutX="832.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="995.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="995.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -177,7 +177,7 @@
                </font>
             </Label>
             <ImageView fx:id="id_eighteenImage" fitHeight="30.0" fitWidth="51.0" layoutX="969.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="1128.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text="°C" textFill="WHITE">
+            <Label layoutX="1128.0" layoutY="298.0" prefHeight="25.0" prefWidth="22.0" text=" C" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -206,12 +206,12 @@
          </font>
       </Label>
       <Separator layoutX="198.0" layoutY="593.0" orientation="VERTICAL" prefHeight="125.0" prefWidth="6.0" />
-      <Label fx:id="id_date1" layoutX="121.0" layoutY="597.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date1" layoutX="55.0" layoutY="597.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek1" layoutX="121.0" layoutY="622.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek1" layoutX="55.0" layoutY="622.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -237,12 +237,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date2" layoutX="272.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date2" layoutX="206.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek2" layoutX="272.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek2" layoutX="206.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -252,7 +252,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_degreesMorning2" layoutX="283.0" layoutY="645.0" prefHeight="25.0" prefWidth="29.0" textFill="WHITE">
+      <Label fx:id="id_degreesMorning2" layoutX="203.0" layoutY="645.0" prefHeight="25.0" prefWidth="109.0" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -263,17 +263,17 @@
          </font>
       </Label>
       <ImageView fx:id="id_dayImage2" fitHeight="30.0" fitWidth="51.0" layoutX="232.0" layoutY="662.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="id_degreesEvening2" layoutX="283.0" layoutY="692.0" prefHeight="25.0" prefWidth="29.0" textFill="WHITE">
+      <Label fx:id="id_degreesEvening2" layoutX="203.0" layoutY="692.0" prefHeight="25.0" prefWidth="109.0" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date3" layoutX="425.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date3" layoutX="359.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek3" layoutX="425.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek3" layoutX="359.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -299,12 +299,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date4" layoutX="586.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date4" layoutX="520.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek4" layoutX="586.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek4" layoutX="520.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -330,12 +330,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date5" layoutX="742.0" layoutY="597.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date5" layoutX="676.0" layoutY="597.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek5" layoutX="742.0" layoutY="622.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek5" layoutX="676.0" layoutY="622.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -361,12 +361,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date6" layoutX="916.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date6" layoutX="850.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek6" layoutX="916.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek6" layoutX="850.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -392,12 +392,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date7" layoutX="1078.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date7" layoutX="1012.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek7" layoutX="1078.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek7" layoutX="1012.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -423,12 +423,12 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_date8" layoutX="1240.0" layoutY="595.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_date8" layoutX="1174.0" layoutY="595.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label fx:id="id_dayWeek8" layoutX="1240.0" layoutY="620.0" prefHeight="25.0" prefWidth="43.0" textAlignment="RIGHT" textFill="WHITE">
+      <Label fx:id="id_dayWeek8" layoutX="1174.0" layoutY="620.0" prefHeight="25.0" prefWidth="109.0" textAlignment="RIGHT" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
@@ -459,5 +459,13 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Label fx:id="id_weater1" layoutX="69.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater2" layoutX="221.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater3" layoutX="356.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater4" layoutX="503.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater5" layoutX="659.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater6" layoutX="822.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater7" layoutX="995.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
+      <Label fx:id="id_weater8" layoutX="1157.0" layoutY="739.0" prefHeight="17.0" prefWidth="109.0" textFill="WHITE" />
    </children>
 </AnchorPane>

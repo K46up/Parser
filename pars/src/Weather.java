@@ -200,7 +200,6 @@ public class Weather {
             Elements tempH = weatherBlock.select("div.forecast-briefly__temp_night");
             Elements cl = weatherBlock.select("div.forecast-briefly__condition");
 
-
             for (int i = 0; i < date.size(); i++) {
                 weatherWeek.add(new WeatherConstructor(date.get(i).text(), day.get(i).text(), temp.get(i).text(),
                         tempH.get(i).text(), cl.get(i).text()));
