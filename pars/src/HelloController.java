@@ -6,6 +6,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class HelloController {
@@ -220,11 +221,145 @@ public class HelloController {
             id_currentDegree.setText(weather.getTemp());
 
             //по часовая getDay
-            //id_zero.setText(weather.getDay());
+            ////////////////////////////////////////////////////////////////////////////////////////////////////
+            List<WeatherConstructor> weatherTime = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime.get(0);
+                //System.out.println(summary.getTime());
+                id_zero.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime1 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime1.get(1);
+                //System.out.println(summary.getTime());
+                id_three.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime2 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime2.get(2);
+                //System.out.println(summary.getTime());
+                id_six.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime3 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime3.get(3);
+                //System.out.println(summary.getTime());
+                id_nine.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime4 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime4.get(4);
+                //System.out.println(summary.getTime());
+                id_twelve.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime5 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime5.get(5);
+                //System.out.println(summary.getTime());
+                id_fifteen.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime6 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime6.get(6);
+                //System.out.println(summary.getTime());
+                id_eighteen.setText(summary.getTemp());
+            }
+
+            List<WeatherConstructor> weatherTime7 = weather.getDay();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherTime7.get(7);
+                //System.out.println(summary.getTime());
+                id_twentyOne.setText(summary.getTemp());
+            }
 
             //по дням недели
+            ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            List<WeatherConstructor> weatherWeek1 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek1.get(0);
+                id_date1.setText(summary.getDate());
+                id_dayWeek1.setText(summary.getDay());
+                id_degreesMorning1.setText(summary.getTemp());
+                id_degreesEvening1.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
 
+            List<WeatherConstructor> weatherWeek2 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek2.get(1);
+                id_date2.setText(summary.getDate());
+                id_dayWeek2.setText(summary.getDay());
+                id_degreesMorning2.setText(summary.getTemp());
+                id_degreesEvening2.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek3 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek3.get(2);
+                id_date3.setText(summary.getDate());
+                id_dayWeek3.setText(summary.getDay());
+                id_degreesMorning3.setText(summary.getTemp());
+                id_degreesEvening3.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek4 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek4.get(3);
+                id_date4.setText(summary.getDate());
+                id_dayWeek4.setText(summary.getDay());
+                id_degreesMorning4.setText(summary.getTemp());
+                id_degreesEvening4.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek5 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek5.get(4);
+                id_date5.setText(summary.getDate());
+                id_dayWeek5.setText(summary.getDay());
+                id_degreesMorning5.setText(summary.getTemp());
+                id_degreesEvening5.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek6 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek6.get(5);
+                id_date6.setText(summary.getDate());
+                id_dayWeek6.setText(summary.getDay());
+                id_degreesMorning6.setText(summary.getTemp());
+                id_degreesEvening6.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek7 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek7.get(6);
+                id_date7.setText(summary.getDate());
+                id_dayWeek7.setText(summary.getDay());
+                id_degreesMorning7.setText(summary.getTemp());
+                id_degreesEvening7.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
+
+            List<WeatherConstructor> weatherWeek8 = weather.getWeek();
+            for (int i = 0; i < 8; i++) {
+                WeatherConstructor summary = weatherWeek8.get(7);
+                id_date8.setText(summary.getDate());
+                id_dayWeek8.setText(summary.getDay());
+                id_degreesMorning8.setText(summary.getTemp());
+                id_degreesEvening8.setText(summary.getTempH());
+                //System.out.println(summary.getCl());
+            }
 
         });
 

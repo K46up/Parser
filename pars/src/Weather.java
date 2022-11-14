@@ -202,7 +202,8 @@ public class Weather {
 
 
             for (int i = 0; i < date.size(); i++) {
-                weatherWeek.add(new WeatherConstructor(date.get(i).text(), day.get(i).text(), temp.get(i).text(), tempH.get(i).text(), cl.get(i).text()));
+                weatherWeek.add(new WeatherConstructor(date.get(i).text(), day.get(i).text(), temp.get(i).text(),
+                        tempH.get(i).text(), cl.get(i).text()));
             }
 
             return weatherWeek;
